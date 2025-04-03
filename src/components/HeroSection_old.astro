@@ -1,0 +1,21 @@
+---
+const { title = "Fear", subtitle = "Tyler Huffman · Sound Alchemist · Composer" } = Astro.props;
+---
+
+<!--  <section class="relative h-screen overflow-hidden text-center flex items-center justify-center"> -->
+  <section class="relative h-screen overflow-hidden text-center flex items-center justify-center bg-gradient-radial from-primary via-primary to-black">
+  <video autoplay muted loop playsinline class="absolute inset-0 object-cover w-full h-full opacity-">
+    <source src="/Fear_TylerHuffman(2020).MP4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/10 z-80"></div>
+
+  <div class="z-20 max-w-3xl mx-auto px-6">
+    <h1 class="text-7xl md:text-7xl font-heading text-gold drop-shadow-xlg">{title}</h1>
+    <p class="mt-4 text-l text-cream">{subtitle}</p>
+    <a href="#portfolio" class="mt-8 inline-block px-6 py-3 bg-gold text-primary font-bold rounded-xl shadow hover:bg-yellow-400 transition">
+      Listen Now
+    </a>
+  </div>
+</section>

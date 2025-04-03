@@ -1,0 +1,43 @@
+---
+import Social from "../components/common/Social.astro";
+const { title = "Tyler Huffman!", description = "..." } = Astro.props;
+
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/assets/styles/tailwind.css">
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class="relative bg-primary text-cream font-thin">
+    <header class="fixed top-0 z-50 w-full px-6 py-8 backdrop-blur-md shadow-mystic">
+      <nav class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="/" class="text-gold text-xl font-thin tracking-wide hover:text-white transition duration-300">
+        <!--<img src="src/assets/home-icon.png"/>   {title} -->
+        </a>
+        <ul class="flex space-x-6 text-sm">
+          <li><a href="#about" class="hover:text-gold transition">About</a></li>
+          <li><a href="#portfolio" class="hover:text-gold transition">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-gold transition">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-24">
+      <slot />
+    </main>
+
+    <footer class="-mt-6 py-12 text-center text-sm text-white/46 backdrop-blur-md shadow-mystic">
+      <body>
+      <div class="text-center lg:col-6 lg:my-0 flex items-center justify-center lg:justify-center backdrop-blur-md shadow-mystic">
+     
+      © {new Date().getFullYear()} Tyler Huffman. All rights reserved.
+
+
+    </div>
+    </footer>
+  </body>
+</html>

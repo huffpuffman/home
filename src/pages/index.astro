@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MysticLayout from '../layouts/MysticLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import MusicPlayer from '../components/MusicPlayer.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MysticLayout title="Tyler Huffman">
+  <HeroSection title="Tyler Huffman" subtitle="Composer · Creator · Mystic" />
+
+  <!-- <div class="bg-primary text-gold p-6 rounded-xl shadow">
+    <h1 class="font-heading text-2xl">Mystic Mode is Working 🧙‍♂️</h1>
+  </div> -->
+  
+
+  <!-- <section id="portfolio" class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-heading text-gold text-center mb-10">Featured Track</h2>
+    <MusicPlayer trackUrl="https://soundcloud.com/tylerhuffman/fear-of-god" />
+  </section> -->
+
+
+  
+
+  <!-- <section class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-heading text-gold text-center mb-10">Featured Track</h2>
+    <MusicPlayer />
+  </section> -->
+  
+
+</MysticLayout>
