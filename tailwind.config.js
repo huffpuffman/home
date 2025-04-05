@@ -19,9 +19,9 @@ module.exports = {
         dark: '#0a0a0a',
       },
       //// The radial background is explicitly applied to the visible section, not hidden under layers.
-      // backgroundImage: {
-      //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      // },
+       backgroundImage: {
+         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+       },
       fontFamily: {
         heading: ['"Inter"', ...defaultTheme.fontFamily.sans],
         // ['"Playfair Display"', ...defaultTheme.fontFamily.serif],

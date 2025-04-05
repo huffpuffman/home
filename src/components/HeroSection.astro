@@ -1,6 +1,7 @@
 ---
 const { title = "Tyler Huffman", subtitle = "Tyler Huffman · Composer · Visionary" } = Astro.props;
-const audioSrc = "src/assets/audio/fear-tyler-huffman.wav";
+const audioSrc = 'audio/fear-tyler-huffman.wav';
+const videoSrc = 'video/Fear_TylerHuffman(2020).MP4';
 ---
 
 <!--------  HERO  -------->
@@ -8,21 +9,21 @@ const audioSrc = "src/assets/audio/fear-tyler-huffman.wav";
 <section id="hero" class="relative h-screen overflow-hidden flex items-center justify-center text-center">
 
   <!-- Hero Background Video Source -->
-  <video id="bgVideo" autoplay muted loop playsinline class="absolute inset-0 w-full h-full   object-cover opacity-1 transition-opacity 5s ease-in-out duration-1000">
-    <source src="src/assets/video/Fear_TylerHuffman(2020).MP4" type="video/mp4"/>
+  <video id="bgVideo" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000 ease-in-out">
+    <source src={videoSrc} type="video/mp4"/>
     Your browser does not support the video tag.
   </video>
 
   <!-- Hero Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/90 to-primary/50 z10 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/90 to-primary/50 z-10 pointer-events-none"></div>
 
   <!-- Hero Content -->
-  <div class="z-100 relative max-w-3xl mx-auto px-6">
+  <div class="z-10 relative max-w-3xl mx-auto px-6">
     <h1 class="text-5xl md:text-7xl lg:text-8xl  text-gold drop-shadow-lg">{title}</h1>
     <p class="mt-2 text-lg md:text-2xl lg:text-3xl  text-cream">{subtitle}</p>
 
   <!-- Social Media Links -->
-  <div class="mt-16 flex justify-center gap-6 z-20">
+  <div class="mt-16 flex justify-center gap-6 z-10">
     <!-- SoundCloud -->
     <a href="https://soundcloud.com/tylerhuffman" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition duration-300">
       <svg class="w-12 h-12 text-cream hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
@@ -85,13 +86,13 @@ const audioSrc = "src/assets/audio/fear-tyler-huffman.wav";
   </div>
 
 <!-- Play Button -->
-    <button id="heroPlayBtn" class="mt-96 px-36 py-6 rounded-full bg-gold border-primary-5 text-primary text-5xl font-extrabold shadow-3xl
+    <button id="heroPlayBtn" class="mt-96 px-36 py-6 rounded-full bg-gold  text-primary text-5xl font-extrabold shadow-3xl
     mix-blend-mode: lighten;
     hover:bg-opacity-80
     hover:bg-cream
     hover:transition-duration-300
-    hover:shadow-3xl
-    hover:text-deepSky">
+    hover:shadow-3xl"
+    style="mix-blend-mode: lighten;">
       Play
     </button>
   </div>
