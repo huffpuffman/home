@@ -1,6 +1,7 @@
 ---
 const { title = "Tyler Huffman", subtitle = "Tyler Huffman · Composer · Visionary" } = Astro.props;
-const audioSrc = "src/assets/audio/fear-tyler-huffman.wav";
+const audioSrc = '/audio/fear-tyler-huffman.wav';
+const videoSrc = '/video/Fear_TylerHuffman(2020).MP4';
 ---
 
 <!--------  HERO  -------->
@@ -9,7 +10,7 @@ const audioSrc = "src/assets/audio/fear-tyler-huffman.wav";
 
   <!-- Hero Background Video Source -->
   <video id="bgVideo" autoplay muted loop playsinline class="absolute inset-0 w-full h-full   object-cover opacity-1 transition-opacity 5s ease-in-out duration-1000">
-    <source src="src/assets/video/Fear_TylerHuffman(2020).MP4" type="video/mp4"/>
+    <source src={videoSrc} type="video/mp4"/>
     Your browser does not support the video tag.
   </video>
 
