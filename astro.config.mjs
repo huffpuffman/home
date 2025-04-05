@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   site: 'https://huffpuffman.github.io',
-  //base: '/',
+  base: '/home/',
   trailingSlash: "ignore",
   integrations: [tailwind(), react()],
 });
